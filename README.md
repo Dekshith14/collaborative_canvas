@@ -43,7 +43,7 @@ Architecture: Event-based drawing synchronization
 Setup Instructions
 
 1. Clone the repository
-   git clone [https://github.com/](https://github.com/)<your-username>/collaborative-canvas.git
+   git clone [https://github.com/](https://github.com/)<your-username>/collaborative_canvas.git
    cd collaborative-canvas
 
 2. Install dependencies
@@ -86,25 +86,6 @@ How It Works
 3. The server stores the stroke in a shared drawHistory array.
 4. The server broadcasts the stroke to all other clients.
 5. Undo and Clear actions update the global history and emit redraw or clear events.
-
----
-
-Known Limitations
-
-* Undo removes the last global stroke (not per-user undo).
-* No persistent storage (drawings are lost when the server restarts).
-* No live cursor preview.
-
----
-
-Time Spent
-
-Server setup (Express + Socket.io): 1 hr
-Canvas drawing logic: 1.5 hrs
-Real-time sync + Undo/Clear: 1 hr
-Testing and Debugging: 0.5 hr
-Documentation: 0.5 hr
-Total: Approximately 4.5 hours
 
 ---
 
