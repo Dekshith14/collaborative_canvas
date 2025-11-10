@@ -99,10 +99,15 @@ Known Limitations
 Time Spent
 
 Server setup (Express + Socket.io): 1 hr
+
 Canvas drawing logic: 1.5 hrs
+
 Real-time sync + Undo/Clear: 1 hr
+
 Testing and Debugging: 0.5 hr
+
 Documentation: 0.5 hr
+
 Total: Approximately 4.5 hours
 ---
 
