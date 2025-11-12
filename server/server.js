@@ -39,6 +39,11 @@ io.on("connection", (socket) => {
     io.emit("clear");
   });
 
+  // 🆕 Live cursor broadcast
+  socket.on("cursorMove", (data) => {
+    socket.broadcast.emit("cursorMove", { userId: socket.id, ...data });
+  });
+
   socket.on("disconnect", () => {
     console.log("🔴 User disconnected:", socket.id);
     delete users[socket.id];
@@ -52,4 +57,4 @@ function getRandomColor() {
 }
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
