@@ -1,6 +1,4 @@
 ---
-FLAM INTERNSHIP PROJECT : 
-
 Real-Time Collaborative Canvas
 
 A real-time multi-user drawing application built using Vanilla JavaScript, HTML5 Canvas, Node.js, and Socket.io.
