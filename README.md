@@ -1,5 +1,5 @@
 ---
-FLAM INTERNSHIP : 
+FLAM INTERNSHIP ->
 
 Real-Time Collaborative Canvas
 
